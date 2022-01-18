@@ -127,12 +127,12 @@ h1 {
   margin: 0px auto;
   padding: 0px 50px;
 }
-.lineWelcome {
+.line_welcome {
   border-bottom: 3px solid #ffffff;
   width: 115px;
   margin: 44px auto 75px;
 }
-.linkWelcome {
+.link_welcome {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
@@ -143,7 +143,7 @@ h1 {
   padding: 10px 100px;
   color: #ffffff;
 }
-.liWelcome p {
+.li_welcome p {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
@@ -153,7 +153,7 @@ h1 {
   color: #f9efcf;
   display: inline-block;
 }
-.liWelcome {
+.li_welcome {
   font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
@@ -167,11 +167,11 @@ h1 {
   width: 22%;
   margin: 116px 15px 0px;
 }
-.sectionSample {
+.section_sample {
   color: #2d3033;
   margin: 0 auto;
 }
-.sectionSample h4 {
+.section_sample h4 {
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
@@ -180,7 +180,7 @@ h1 {
   margin: 0px auto;
   padding: 50px 28px;
 }
-.sectionSample h3 {
+.section_sample h3 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 900;
@@ -189,12 +189,12 @@ h1 {
   text-transform: uppercase;
   padding-bottom: 50px;
 }
-.lineSample {
+.line_sample {
   border-bottom: 4px solid #f38281;
   width: 115px;
   margin: 0px auto;
 }
-.boxSample {
+.box_sample {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -205,7 +205,7 @@ h1 {
   max-width: 1170px;
 }
 
-.blockGrad {
+.block_grad {
   background-image: url(../images/gradandgreen.jpg);
   width: 386px;
   height: auto;
@@ -213,11 +213,11 @@ h1 {
   padding: 36px;
   margin: 50px 0px;
 }
-.blockGrad img {
+.block_grad img {
   padding-top: 107px;
   padding-bottom: 25px;
 }
-.blockGrad p {
+.block_grad p {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -227,11 +227,11 @@ h1 {
   color: #ffffff;
   padding-bottom: 93px;
 }
-.blockSample {
+.block_sample {
   display: inline-block;
   margin: 50px 0px 0px 10px;
 }
-.blockSample img {
+.block_sample img {
   width: 370px;
   height: auto;
 }
@@ -243,12 +243,12 @@ h1 {
   max-width: 1170px;
   margin: 0 auto;
 }
-.boxGreen {
+.box_green {
   display: inline-block;
   width: 19%;
   border-left: solid 1px #ffffff;
 }
-.boxGreenEnd {
+.box_green_end {
   display: inline-block;
   width: 19%;
   border-left: solid 1px #ffffff;
@@ -274,12 +274,12 @@ h1 {
 
   color: #ffffff;
 }
-.caseAmazing {
+.case_amazing {
   margin-top: 50px;
   max-width: 1170px;
   margin: 0 auto;
 }
-.caseAmazing h4 {
+.case_amazing h4 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -290,7 +290,7 @@ h1 {
   padding: 15px 28px 20px 100px;
   text-align: left;
 }
-.caseAmazing p {
+.case_amazing p {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -301,16 +301,16 @@ h1 {
   text-align: left;
 }
 
-.blockicon {
+.block_icon {
   display: inline-block;
   margin: 50px 0px 0px 10px;
   width: 32%;
 }
-.blockicon img {
+.block_icon img {
   width: 70px;
   height: 70px;
 }
-.sectionDesign {
+.section_design {
   background-image: url("../images/mountains.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -318,32 +318,32 @@ h1 {
   max-width: 1510px;
   margin: 0 auto;
 }
-.caseDesign {
+.case_design {
   margin-top: 50px;
 }
-.caseService {
+.case_service {
   max-width: 1170px;
   margin: 0 auto;
 }
-.boxService {
+.box_service {
   width: 47%;
   margin: 50px 15px 114px;
   display: inline-block;
 }
-.blockService {
+.block_service {
   border: 2px solid rgba(198, 203, 205, 1);
   padding: 33px;
 }
-.iconServise {
+.icon_service {
   display: inline-block;
   width: 15%;
   text-align: left;
 }
-.textService {
+.text_service {
   display: inline-block;
   width: 84%;
 }
-.textService p {
+.text_service p {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
@@ -358,19 +358,19 @@ h1 {
   background-color: #f8f8f8;
   max-width: 1510px;
 }
-.iconcitation {
+.icon_citation {
   border: 2px solid #95e1d3;
   padding: 32px;
   display: inline-block;
   margin: 0px 37px;
   width: 115px;
 }
-.textcitation {
+.text_citation {
   display: inline-block;
   width: 655px;
   margin: 20px;
 }
-.textcitation p {
+.text_citation p {
   font-family: "Raleway";
   font-weight: 500;
   font-style: italic;
@@ -379,37 +379,37 @@ h1 {
   color: #a9afb1;
   text-align: left;
 }
-.linecitation {
+.line_citation {
   display: inline-block;
   border-bottom: 4px solid #f38281;
   width: 47px;
 }
-.linecitation p {
+.line_citation p {
   text-align: left;
 }
-.headingcitation {
+.head_ingcitation {
   display: inline-block;
   padding: 30px;
 }
-.headingcitation h4 {
+.head_ingcitation h4 {
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
 }
-.blockfounder {
+.block_founder {
   background-image: url(../images/founder.jpg);
   width: 386px;
   height: auto;
   display: inline-block;
   padding: 196px 0px;
 }
-.blockfounder img {
+.block_founder img {
   width: 171px;
   height: 42px;
 }
-.blockSample h4 {
+.block_sample h4 {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
@@ -419,7 +419,7 @@ h1 {
   color: #2d3033;
   padding: 25px 0px;
 }
-.blockSample p {
+.block_sample p {
   font-family: "Raleway";
   font-weight: 400;
   font-style: normal;
@@ -429,11 +429,11 @@ h1 {
   color: #2d3033;
   padding: auto;
 }
-.containermeet {
+.container_meet {
   background: #f8f8f8;
   margin-top: 84px;
 }
-.iconmeet {
+.icon_meet {
   display: inline-block;
   width: 16%;
   height: auto;
@@ -442,7 +442,7 @@ h1 {
   margin: 50px 0px;
   max-width: 1510px;
 }
-.blockwork {
+.block_work {
   display: inline-block;
   width: 24%;
   height: auto;
