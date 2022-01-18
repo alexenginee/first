@@ -450,3 +450,26 @@ h1 {
 .philips {
   background: #ffffff;
 }
+
+.lesson {
+  margin: 100px 16px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  border: 1px solid;
+  align-items: center;
+}
+.lesson_box {
+  padding: 8px;
+  width: 10%;
+}
+.lesson_box_one {
+  flex-grow: 2;
+}
+.lesson_box_two {
+  flex-grow: 1;
+}
+.lesson_box_three {
+  flex-grow: 1;
+}
