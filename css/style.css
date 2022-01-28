@@ -154,20 +154,20 @@ img {
   color: #ffffff;
   padding-top: 10rem;
 }
-.content-welcome {
+.welcome-content {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
 }
-.content-welcome__text {
+.welcome-content__text {
   position: relative;
   display: block;
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.content-welcome__text p {
+.welcome-content__text p {
   font-family: "Kaushan Script";
   font-weight: 400;
   font-style: normal;
@@ -209,7 +209,7 @@ h1:hover::after {
   width: 10.625rem;
 }
 
-.content-welcome__link {
+.welcome-content__link {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
@@ -224,24 +224,24 @@ h1:hover::after {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.content-welcome__link:hover {
+.welcome-content__link:hover {
   color: #f4bf87;
   background-color: #ffffff;
 }
-.content-welcome__link:focus,
-.content-welcome__link:active {
+.welcome-content__link:focus,
+.welcome-content__link:active {
   color: #f4bf87;
   background-color: #ffffff;
   border-color: #f4bf87;
 }
 
-.content-welcome__block {
+.welcome-content__block {
   width: 75rem;
   display: flex;
   list-style: none;
 }
 
-.content-welcome__block div {
+.welcome-content__block div {
   font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
@@ -260,7 +260,7 @@ h1:hover::after {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.content-welcome__block h4 {
+.welcome-content__block h4 {
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
@@ -269,23 +269,25 @@ h1:hover::after {
   text-transform: uppercase;
   color: #f9efcf;
 }
-.content-welcome__block p {
+.welcome-content__block p {
   padding-left: 1rem;
   flex: 1;
 }
-.content-welcome__block div::before {
+.welcome-content__block div::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   opacity: 0;
   width: 0;
   height: 4px;
-  margin-top: -4px;
+  transform: translateY(-100%);
   background-color: orangered;
   transition: all 0.3s ease;
 }
 
-.content-welcome__block div:hover::before {
+.welcome-content__block div:hover::before {
   opacity: 1;
   width: 30%;
 }
