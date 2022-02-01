@@ -377,6 +377,7 @@ h1:hover::after {
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
+
 .story__content__boxes__box-grad p {
   font-family: "Raleway";
   font-style: normal;
@@ -441,8 +442,7 @@ h1:hover::after {
 .services__content__boxes__box {
   flex: 1;
   display: flex;
-
-  flex-basis: 24rem;
+  flex-basis: 33%;
 }
 .services__content__boxes__box:nth-child(-n + 3) {
   padding-bottom: 9rem;
@@ -483,11 +483,9 @@ h1:hover::after {
 }
 .disign__content {
   position: relative;
-  text-align: center;
   margin-bottom: 3rem;
 }
 .disign__content img:nth-child(2) {
-  background: none;
   position: absolute;
   bottom: 0;
   left: 50%;
