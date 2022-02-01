@@ -432,33 +432,29 @@ h1:hover::after {
 .services {
   margin: 3rem 0;
 }
-.services__content {
-  display: flex;
-  flex-direction: column;
-
-  width: 75rem;
-  padding: 0 1rem;
-}
 .services__content__boxes {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 3rem;
+  padding-bottom: ;
 }
 .services__content__boxes__box {
   flex: 1;
   display: flex;
-  padding-left: 1rem;
+  
+  flex-basis: 24rem;
 }
-
+.services__content__boxes__box:nth-child(-n+3) { padding-bottom:9rem ;
+}
 .services__content__boxes__box__box-text {
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  padding-left: 1rem;
+ 
 }
 .services__content__boxes__box img {
   width: 70px;
   height: 70px;
+  margin-right: 2rem;
 }
 
 .services__content__boxes__box__box-text h4 {
@@ -487,7 +483,7 @@ h1:hover::after {
   background-position: center;
 }
 .disign__content {
-  position: relative;
+  position: relative;rem
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -509,7 +505,7 @@ h1:hover::after {
   flex: 1;
   display: flex;
   justify-content: space-between;
-  clear: both;
+
   margin-bottom: 7rem;
 }
 .service__content__boxes {
