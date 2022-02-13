@@ -1227,8 +1227,6 @@ h1:hover::after {
     margin: 0 auto;
     margin-top: 3rem;
   }
-  .our-work .content__text {
-  }
   .our-work__content {
     margin: 2rem 0;
   }
@@ -1258,8 +1256,6 @@ h1:hover::after {
     max-width: 19.875rem;
     margin: 0 auto;
     margin-top: 2rem;
-  }
-  .our-work .content__text {
   }
   .our-work__content {
     margin: 2rem 0;
