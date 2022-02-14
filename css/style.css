@@ -1776,7 +1776,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 2rem;
 }
 .footer__content__block-instagram__instagram img {
@@ -1950,6 +1950,9 @@ footer {
   }
   .footer__content__block-instagram {
     flex-basis: 100%;
+  }
+  .footer__content__block-instagram__instagram {
+    justify-content: center;
   }
   .footer__content__block-instagram__instagram img {
     max-width: 6rem;
