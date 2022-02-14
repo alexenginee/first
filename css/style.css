@@ -1148,7 +1148,7 @@ h1:hover::after {
 }
 .team__content__box img {
   max-width: 5rem;
-  max-height: 6rem;
+  height: auto;
 }
 @media (max-width: 64rem) {
   .team {
@@ -1158,7 +1158,7 @@ h1:hover::after {
 
   .team__content__box img {
     max-width: 3.43rem;
-    max-height: 4.43rem;
+    height: auto;
   }
 }
 @media (max-width: 48rem) {
