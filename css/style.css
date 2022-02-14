@@ -1781,6 +1781,8 @@ footer {
 .footer__content__block-instagram__instagram {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 .footer__content__block-instagram__instagram img {
@@ -1891,8 +1893,8 @@ footer {
     margin-bottom: 1.5rem;
   }
   .footer__content__block-instagram__instagram img {
-    max-width: 4.875rem;
-    max-height: 4.75rem;
+    max-width: 4.575rem;
+    max-height: 4.55rem;
   }
   .footer__content__block-instagram__text p {
     font-size: 0.75rem;
@@ -1943,8 +1945,8 @@ footer {
     text-align: center;
   }
   .footer__content__boxes__box-blogs__images img {
-    max-width: 5.188rem;
-    max-height: 4.438rem;
+    max-width: 5.088rem;
+    max-height: 4.338rem;
   }
   .footer__content__boxes__box-blogs__text h3 {
     line-height: 1rem;
