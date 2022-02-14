@@ -155,9 +155,6 @@ img {
   border: none;
 }
 @media (max-width: 64rem) {
-  .container {
-    max-width: 64.25rem;
-  }
   .header__logo {
     max-width: 4.138rem;
     max-height: 1.106rem;
@@ -174,9 +171,6 @@ img {
   }
 }
 @media (max-width: 48rem) {
-  .container {
-    max-width: 19.875rem;
-  }
   .header__logo {
     max-width: 3.39rem;
     max-height: 0.906rem;
