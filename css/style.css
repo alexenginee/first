@@ -1973,19 +1973,18 @@ footer {
   .footer__content__boxes h4 {
     text-align: center;
   }
-  .footer__content__boxes {
-    text-align: center;
+  .footer__content__boxes__box {
+    align-items: center;
   }
-
   .footer__content__boxes__box-blogs__images img {
-    max-width: 5.088rem;
-    max-height: 4.338rem;
   }
   .footer__content__boxes__box-blogs__text h3 {
     line-height: 1rem;
+    text-align: center;
   }
   .footer__content__boxes__box-blogs__text p {
     line-height: 0.875rem;
+    text-align: center;
   }
   .footer__content__block-instagram {
     flex-basis: 100%;
