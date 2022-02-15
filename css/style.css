@@ -1976,18 +1976,16 @@ footer {
   .footer__content__boxes__box {
     align-items: center;
   }
-  .footer__content__boxes__box-blogs__images img {
-  }
   .footer__content__boxes__box-blogs__text h3 {
     line-height: 1rem;
-    text-align: center;
   }
   .footer__content__boxes__box-blogs__text p {
     line-height: 0.875rem;
-    text-align: center;
   }
   .footer__content__block-instagram {
+    max-width: 18rem;
     flex-basis: 100%;
+    margin: 0 auto;
   }
   .footer__content__block-instagram__instagram {
     justify-content: center;
