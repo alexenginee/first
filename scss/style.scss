@@ -899,7 +899,6 @@ h1 {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
   display: block;
   opacity: 0;
   width: 0;
@@ -943,11 +942,6 @@ h1 {
     display: none;
   }
   .citation__content__box {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
     margin-left: 0;
     margin-right: 0;
   }
@@ -963,11 +957,13 @@ h1 {
     margin-left: 5.375rem;
   }
   .citation__content__box h4::before {
-    left: -14%;
+    transform: translateX(-110%);
+    opacity: 1;
     width: 13%;
   }
   .citation__content__box h4:hover::before {
     width: 13%;
+    opacity: 1;
   }
   .citation__content__box-dots {
     display: block;
@@ -1092,103 +1088,155 @@ h1 {
 }
 .our-work {
   margin-top: 3rem;
-}
-.our-work .content__text {
-  max-width: 75rem;
-  padding: 0 0.9375rem;
-  text-align: center;
-  margin: 0 auto;
-}
-.our-work__content {
-  margin: 3rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  .content__text {
+    max-width: 75rem;
+    padding: 0 0.9375rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__content {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "girl sahara hills city"
+      "sky citybandw hills citysky";
+
+    .story__content__boxes {
+      &:nth-child(1) {
+        grid-area: girl;
+      }
+      &:nth-child(2) {
+        grid-area: sahara;
+      }
+      &:nth-child(3) {
+        grid-area: hills;
+      }
+      &boxes:nth-child(4) {
+        grid-area: city;
+      }
+      &boxes:nth-child(5) {
+        grid-area: sky;
+      }
+      &boxes:nth-child(6) {
+        grid-area: citybandw;
+      }
+      &boxes:nth-child(7) {
+        grid-area: citysky;
+      }
+      &__box-grad {
+        top: 0;
+        left: 0;
+        p {
+          margin-top: 3.563rem;
+        }
+        img {
+          max-width: 1.81rem;
+          max-height: 1.81rem;
+        }
+        p:last-of-type {
+          font-family: "Raleway";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 1.5;
+          color: #ffffff;
+          margin-top: 1.5rem;
+          text-transform: none;
+        }
+      }
+    }
+  }
 }
 
-.our-work .story__content__boxes__box-grad {
-  top: 0;
-  left: 0;
-}
-
-.our-work .story__content__boxes__box-grad p {
-  margin-top: 3.563rem;
-}
-.our-work .story__content__boxes__box-grad p:last-of-type {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-top: 1.5rem;
-  text-transform: none;
-}
 @media (max-width: 64rem) {
   .our-work {
-    max-width: 64.25rem;
-    margin: 0 auto;
-    margin-top: 3rem;
-  }
-  .our-work__content {
-    margin: 2rem 0;
-  }
-  .our-work .story__content__boxes__box img {
-    max-width: 16rem;
-    max-height: 16rem;
-  }
-  .our-work__content_image:nth-child(3) img {
-    max-width: 16rem;
-    max-height: 32rem;
-  }
-  .our-work .story__content__boxes__box-grad img {
-    max-width: 1.78rem;
-    max-height: 1.78rem;
-  }
-  .our-work .story__content__boxes__box-grad p {
-    font-size: 1.125rem;
-    margin-top: 2.416rem;
-  }
-  .our-work .story__content__boxes__box-grad p:last-of-type {
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
+    .our-work__content {
+      margin: 2rem 0;
+      .story__content__boxes {
+        &__box-grad {
+          p {
+            font-size: 1.125rem;
+            margin-top: 2.416rem;
+          }
+          p:last-of-type {
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
   }
 }
 @media (max-width: 48rem) {
   .our-work {
-    max-width: 19.875rem;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
-  .our-work .content__text h3::after {
-    opacity: 1;
-    width: 40%;
-  }
-  .our-work .content__text h3:hover::after {
-    opacity: 1;
-    width: 40%;
-  }
-  .our-work__content {
-    margin: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .our-work__content_image {
-    flex-basis: 50%;
-  }
-  .our-work .story__content__boxes__box img {
-    max-width: 10rem;
-    max-height: 9.5rem;
-  }
-  .our-work__content_image:nth-child(3) img {
-    max-width: 10rem;
-    max-height: 28.5rem;
-  }
-  .our-work .story__content__boxes__box-grad {
-    display: none;
+    .content__text {
+      h3 {
+        &::after {
+          opacity: 1;
+          width: 20%;
+        }
+        &:hover::after {
+          opacity: 1;
+          width: 20%;
+        }
+      }
+    }
+    &__content {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "girl hills"
+        "sky hills"
+        "citysky hills"
+        "city sahara"
+        "citybandw citybandw";
+      .story__content__boxes {
+        &:nth-child(1) {
+          grid-area: girl;
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+        &:nth-child(2) {
+          grid-area: sahara;
+          grid-column: 2/3;
+          grid-row: 4/5;
+        }
+        &:nth-child(3) {
+          grid-area: hills;
+          grid-column: 2/3;
+          grid-row: 1/4;
+        }
+        &boxes:nth-child(4) {
+          grid-area: city;
+          grid-column: 1/2;
+          grid-row: 4/5;
+        }
+        &boxes:nth-child(5) {
+          grid-area: sky;
+          grid-column: 1/2;
+          grid-row: 2/3;
+        }
+        &boxes:nth-child(6) {
+          grid-area: citybandw;
+          grid-column: 1/-1;
+          grid-row: 5/6;
+        }
+        &boxes:nth-child(7) {
+          grid-area: citysky;
+          grid-column: 1/2;
+          grid-row: 3/4;
+        }
+        &__box-grad {
+          display: none;
+        }
+      }
+    }
   }
 }
+
 .philips {
   background: none;
 }
@@ -1204,7 +1252,6 @@ h1 {
   }
   .citation__content__box-image img {
     max-width: 7.205rem;
-    max-height: 7.205rem;
   }
 }
 .happy-clients {
@@ -1228,12 +1275,11 @@ h1 {
   text-align: left;
 }
 .happy-clients__content__boxes__image {
+  flex-basis: 100%;
   margin-right: 3.125rem;
 }
 .happy-clients__content__boxes__image img {
-  width: auto;
   max-width: 8.125rem;
-  max-height: 8.125rem;
 }
 .happy-clients__content__boxes h4 {
   font-family: "Raleway";
@@ -1289,10 +1335,7 @@ h1 {
     gap: 2rem;
     margin-top: 2rem;
   }
-  .happy-clients__content__boxes__image img {
-    max-width: 5.51rem;
-    max-height: 5.51rem;
-  }
+
   .happy-clients__content__boxes h4 {
     font-size: 1.125rem;
   }
@@ -1348,17 +1391,13 @@ h1 {
 .our-stories__content__box__imagen {
   position: relative;
 }
-.our-stories__content__box__imagen img {
-  max-width: 23.125rem;
-  max-height: 15.813rem;
-}
 .our-stories__content__box__imagen__calendar {
   background: rgba(149, 225, 211, 1);
   position: absolute;
   top: 60%;
   left: 0;
-  transform: translateX(-20%);
-  width: 21%;
+  transform: translateX(-15%);
+  width: 31%;
   height: 31%;
   color: #fff;
 }
@@ -1367,17 +1406,18 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 2.25rem;
-  line-height: 1;
-  margin: 10%;
+  line-height: 1.5;
+  margin-top: 0.5rem;
 }
 .our-stories__content__box__imagen__calendar p:nth-child(2) {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
-  line-height: 1;
+  line-height: 1.5;
   text-transform: uppercase;
 }
+
 .our-stories__content__box__text h4 {
   font-family: "Raleway";
   font-style: normal;
@@ -1399,14 +1439,13 @@ h1 {
 }
 .our-stories__content__box__icons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .our-stories__content__box__icons div {
   display: flex;
   align-items: center;
 }
 .our-stories__content__box__icons img {
-  max-height: 30px;
   max-width: 30px;
   margin-right: 1.5rem;
 }
@@ -1425,16 +1464,14 @@ h1 {
   .our-stories__content {
     gap: 1.125rem;
   }
-  .our-stories__content__box__imagen img {
-    max-width: 19.75rem;
-    max-height: 13.375rem;
-  }
+
   .our-stories__content__box__imagen__calendar {
+    width: 25%;
+    height: 25%;
     transform: translateX(-10%);
   }
   .our-stories__content__box__imagen__calendar p:nth-child(1) {
     font-size: 1.5rem;
-    margin: 10% 0;
   }
   .our-stories__content__box__imagen__calendar p:nth-child(2) {
     font-size: 0.875rem;
@@ -1448,8 +1485,6 @@ h1 {
     margin-bottom: 1rem;
   }
   .our-stories__content__box__icons img {
-    max-height: 1.7rem;
-    max-width: 1.7rem;
     margin-right: 0.9375rem;
   }
   .our-stories__content__box__icons p {
@@ -1463,21 +1498,13 @@ h1 {
     gap: 1.875rem;
   }
   .our-stories__content__box__imagen__calendar {
-    top: 60%;
-    left: 50%;
-    transform: translateX(-210%);
-    width: 4.241rem;
-    height: 4.241rem;
-    color: #fff;
+    transform: translateX(0);
   }
   .our-stories__content__box__text h4 {
     text-align: center;
   }
   .our-stories__content__box__text p {
     text-align: center;
-  }
-  .our-stories__content__box__imagen img {
-    max-width: 18rem;
   }
   .our-stories__content__box__icons {
     display: flex;
