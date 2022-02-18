@@ -73,6 +73,7 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  overflow: hidden;
 }
 .header {
   position: absolute;
@@ -1095,14 +1096,15 @@ h1 {
     margin: 0 auto;
   }
   &__content {
-    margin: 3rem 0;
+    margin: 3rem auto;
+    text-align: center;
     display: grid;
+    align-items: stretch;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "girl sahara hills city"
       "sky citybandw hills citysky";
-
     .story__content__boxes {
       &:nth-child(1) {
         grid-area: girl;
@@ -1194,40 +1196,28 @@ h1 {
         "city sahara"
         "citybandw citybandw";
       .story__content__boxes {
+        width: 49%;
         &:nth-child(1) {
           grid-area: girl;
-          grid-column: 1/2;
-          grid-row: 1/2;
         }
         &:nth-child(2) {
           grid-area: sahara;
-          grid-column: 2/3;
-          grid-row: 4/5;
         }
         &:nth-child(3) {
           grid-area: hills;
-          grid-column: 2/3;
-          grid-row: 1/4;
+          grid-row-start: span 3;
         }
         &boxes:nth-child(4) {
           grid-area: city;
-          grid-column: 1/2;
-          grid-row: 4/5;
         }
         &boxes:nth-child(5) {
           grid-area: sky;
-          grid-column: 1/2;
-          grid-row: 2/3;
         }
         &boxes:nth-child(6) {
           grid-area: citybandw;
-          grid-column: 1/-1;
-          grid-row: 5/6;
         }
         &boxes:nth-child(7) {
           grid-area: citysky;
-          grid-column: 1/2;
-          grid-row: 3/4;
         }
         &__box-grad {
           display: none;
@@ -1392,6 +1382,10 @@ h1 {
   position: relative;
 }
 .our-stories__content__box__imagen__calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: rgba(149, 225, 211, 1);
   position: absolute;
   top: 60%;
@@ -1406,8 +1400,8 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 2.25rem;
-  line-height: 1.5;
-  margin-top: 0.5rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
 }
 .our-stories__content__box__imagen__calendar p:nth-child(2) {
   font-family: "Raleway";
