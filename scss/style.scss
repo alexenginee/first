@@ -1096,6 +1096,7 @@ h1 {
     margin: 0 auto;
   }
   &__content {
+    width: 100vh;
     margin: 3rem auto;
     text-align: center;
     display: grid;
@@ -1115,16 +1116,16 @@ h1 {
       &:nth-child(3) {
         grid-area: hills;
       }
-      &boxes:nth-child(4) {
+      &:nth-child(4) {
         grid-area: city;
       }
-      &boxes:nth-child(5) {
+      &:nth-child(5) {
         grid-area: sky;
       }
-      &boxes:nth-child(6) {
+      &:nth-child(6) {
         grid-area: citybandw;
       }
-      &boxes:nth-child(7) {
+      &:nth-child(7) {
         grid-area: citysky;
       }
       &__box-grad {
@@ -1203,18 +1204,17 @@ h1 {
         }
         &:nth-child(3) {
           grid-area: hills;
-          grid-row-start: span 3;
         }
-        &boxes:nth-child(4) {
+        &:nth-child(4) {
           grid-area: city;
         }
-        &boxes:nth-child(5) {
+        &:nth-child(5) {
           grid-area: sky;
         }
-        &boxes:nth-child(6) {
+        &:nth-child(6) {
           grid-area: citybandw;
         }
-        &boxes:nth-child(7) {
+        &:nth-child(7) {
           grid-area: citysky;
         }
         &__box-grad {
@@ -1385,11 +1385,13 @@ h1 {
   align-items: center;
   background: rgba(149, 225, 211, 1);
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 0;
-  transform: translateX(-15%);
-  width: 31%;
-  height: 31%;
+  transform: translate(-20%, 20%);
+  max-width: 4.25rem;
+  max-height: 4.25rem;
+  width: 100%;
+  height: 100%;
   color: #fff;
 }
 .our-stories__content__box__imagen__calendar p:nth-child(1) {
@@ -1456,8 +1458,6 @@ h1 {
     gap: 1.125rem;
   }
   .our-stories__content__box__imagen__calendar {
-    width: 25%;
-    height: 25%;
     transform: translateX(-10%);
   }
   .our-stories__content__box__imagen__calendar p:nth-child(1) {
