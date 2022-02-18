@@ -1089,14 +1089,15 @@ h1 {
 }
 .our-work {
   margin-top: 3rem;
+  .container {
+    max-width: none;
+    padding: 0;
+  }
   .content__text {
     max-width: 75rem;
     padding: 0 0.9375rem;
-    text-align: center;
-    margin: 0 auto;
   }
   &__content {
-    width: 100vh;
     margin: 3rem auto;
     text-align: center;
     display: grid;
@@ -1107,6 +1108,13 @@ h1 {
       "girl sahara hills city"
       "sky citybandw hills citysky";
     .story__content__boxes {
+      &__box {
+        height: 100%;
+
+        img {
+          height: 100%;
+        }
+      }
       &:nth-child(1) {
         grid-area: girl;
       }
@@ -1187,8 +1195,8 @@ h1 {
       }
     }
     &__content {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(5, auto);
       grid-template-areas:
         "girl hills"
         "sky hills"
@@ -1213,6 +1221,7 @@ h1 {
         }
         &:nth-child(6) {
           grid-area: citybandw;
+          max-height: 23.625rem;
         }
         &:nth-child(7) {
           grid-area: citysky;

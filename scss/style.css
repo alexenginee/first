@@ -1391,15 +1391,17 @@ h1 {
   margin-top: 3rem;
 }
 
+.our-work .container {
+  max-width: none;
+  padding: 0;
+}
+
 .our-work .content__text {
   max-width: 75rem;
   padding: 0 0.9375rem;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .our-work__content {
-  width: 100vh;
   margin: 3rem auto;
   text-align: center;
   display: -ms-grid;
@@ -1412,6 +1414,14 @@ h1 {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "girl sahara hills city" "sky citybandw hills citysky";
+}
+
+.our-work__content .story__content__boxes__box {
+  height: 100%;
+}
+
+.our-work__content .story__content__boxes__box img {
+  height: 100%;
 }
 
 .our-work__content .story__content__boxes:nth-child(1) {
@@ -1509,10 +1519,10 @@ h1 {
     width: 20%;
   }
   .our-work__content {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
         grid-template-areas: "girl hills" "sky hills" "citysky hills" "city sahara" "citybandw citybandw";
   }
   .our-work__content .story__content__boxes:nth-child(1) {
@@ -1546,6 +1556,7 @@ h1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: citybandw;
+    max-height: 23.625rem;
   }
   .our-work__content .story__content__boxes:nth-child(7) {
     -ms-grid-row: 3;
