@@ -1151,7 +1151,6 @@ h1 {
     }
   }
 }
-
 @media (max-width: 64rem) {
   .our-work {
     margin-top: 2rem;
@@ -1225,7 +1224,6 @@ h1 {
     }
   }
 }
-
 .philips {
   background: none;
 }
@@ -1457,7 +1455,6 @@ h1 {
   .our-stories__content {
     gap: 1.125rem;
   }
-
   .our-stories__content__box__imagen__calendar {
     width: 25%;
     height: 25%;
@@ -1698,12 +1695,10 @@ footer {
   justify-content: space-between;
   gap: 1.875rem;
 }
-.footer__content__boxes__box-blogs__images img {
-  max-width: 10.625rem;
-  max-height: 6.563rem;
-}
+
 .footer__content__boxes__box-blogs__text {
   flex: 1;
+  flex-basis: 80%;
   text-align: left;
 }
 .footer__content__boxes__box-blogs__text h3 {
@@ -1728,16 +1723,13 @@ footer {
   flex-basis: 31%;
 }
 .footer__content__block-instagram__instagram {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
   margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .footer__content__block-instagram__instagram img {
   border: 0.5px solid rgba(248, 248, 248, 1);
-  max-width: 5.625rem;
-  max-height: 5.5rem;
 }
 .footer__content__block-instagram__text p {
   font-family: "Raleway";
@@ -1828,10 +1820,6 @@ footer {
   .footer__content__boxes__box-blogs {
     gap: 1rem;
   }
-  .footer__content__boxes__box-blogs__images img {
-    max-width: 7.191rem;
-    max-height: 4.442rem;
-  }
   .footer__content__boxes__box-blogs__text h3 {
     font-size: 0.875rem;
   }
@@ -1840,10 +1828,6 @@ footer {
   }
   .footer__content__block-instagram__instagram {
     margin-bottom: 1.5rem;
-  }
-  .footer__content__block-instagram__instagram img {
-    max-width: 4.575rem;
-    max-height: 4.55rem;
   }
   .footer__content__block-instagram__text p {
     font-size: 0.75rem;
@@ -1903,16 +1887,8 @@ footer {
     line-height: 0.875rem;
   }
   .footer__content__block-instagram {
-    max-width: 18rem;
     flex-basis: 100%;
     margin: 0 auto;
-  }
-  .footer__content__block-instagram__instagram {
-    justify-content: center;
-  }
-  .footer__content__block-instagram__instagram img {
-    max-width: 6rem;
-    max-height: 5.78rem;
   }
   .footer__content__block-instagram__text p {
     text-align: center;
