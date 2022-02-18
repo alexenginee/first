@@ -1514,9 +1514,6 @@ h1 {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "girl hills" "sky hills" "citysky hills" "city sahara" "citybandw citybandw";
   }
-  .our-work__content .story__content__boxes {
-    width: 49%;
-  }
   .our-work__content .story__content__boxes:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
