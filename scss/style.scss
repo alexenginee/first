@@ -3,48 +3,56 @@
   src: url("../fonts/KaushanScript-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -467,9 +475,12 @@ h1 {
 .story__content__boxes {
   position: relative;
 }
+.story__content__boxes__box {
+  display: flex;
+}
 .story__content__boxes__box-grad {
   position: absolute;
-  top: -1.5rem;
+  top: -1rem;
   left: -1rem;
   display: flex;
   flex-direction: column;
@@ -527,7 +538,7 @@ h1 {
     gap: 1rem;
   }
   .story__content__boxes__box-grad {
-    top: -0.75rem;
+    top: -0.5rem;
     left: -0.5rem;
   }
   .story__content__boxes__box-grad p {
